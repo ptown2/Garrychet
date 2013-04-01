@@ -1,0 +1,20 @@
+@SolidClass base(Targetname) = trigger_jumppad : "RC: You can create a jump pad here."
+[
+	overridevelocity(choices) : "Override Velocity" : 0 : "Should the velocity of the object be overriden instead of added to?" =
+	[
+		1 : "Yes"
+		0 : "No"
+	]
+	pushvelocity(string) : "Push Velocity" : "0 0 0" : "Should be either a vector or a number depending on what Push from Origin is set as."
+]
+@PointClass base(Targetname) = rc_gameinfo  : "RC: Allows you to set the game info for this map."
+[
+	gametype(choices) : "Gametype?" : 1 : "Set the gametype for this map" =
+	[
+		1 : "Deathmatch"
+		2 : "Team Deathmatch"		
+	]
+]
+@PointClass base(Targetname) = point_powerup  : "RC: Allows you to place a point for powerups to spawn. TODO: Allow mappers to set certain powerups."
+[
+]
