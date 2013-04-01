@@ -1,7 +1,6 @@
 if CLIENT then
 	SWEP.PrintName = "Ricochet Disk"
 	SWEP.ViewModelFOV = 70
-	SWEP.ViewModelFlip = false
 
 	SWEP.Slot = 0
 	SWEP.SlotPos = 1
@@ -13,6 +12,7 @@ SWEP.AutoSwitchFrom = false
 
 SWEP.HoldType = "slam"
 SWEP.ViewModel = ""
+
 SWEP.WorldModel = "models/ricochet/ricochet_disc.mdl"
 
 SWEP.Primary.ClipSize = 3
@@ -84,7 +84,7 @@ function SWEP:CreateDisk(disk, ammo)
 
 	if SERVER then
 		local disc = ents.Create(disk)
-		disc:SetPos(owner:GetPos() + owner:GetForward() * 25 + Vector(0, 0, 36))
+		disc:SetPos(owner:GetPos() + owner:GetForward() * 24 + Vector(0, 0, 36))
 		disc:SetOwner(owner)
 		disc:SetColor(powerup == POWERUP_FAST and COLOR_GREEN or Color(col.r, col.g, col.b, 255))
 		disc:SetAngles(Angle(0, angles.yaw, 0))
