@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "ricochet/hud_edge"
+	"$translucent" 1
+}

@@ -141,10 +141,6 @@ function GM:PlayerLoadout(pl)
 	pl:Give("weapon_disc")
 end
 
-function GM:PlayerDeathSound()
-	return true
-end
-
 function GM:EntityTakeDamage(pl, dmginfo)
 	if dmginfo:IsFallDamage() then dmginfo:SetDamage(0) end
 
@@ -196,9 +192,13 @@ function GM:DoPlayerDeath(pl, attacker, dmginfo)
 			for _, v in pairs(player.GetAll()) do
 				v:ChatPrint("The Round is over! The winner is: "..tostring(attacker:Nick()).."! Round "..tostring(GetGlobalInt("rc_round")).." starts in 10 seconds!")
 			end
-			timer.Create("RestartRound", 10, 1, function() gamemode.Call("RestartGame") end)
+			timer.Create("RestartRound", 10, 1, function() self:RestartGame() end)
 		end
 	end
+end
+
+function GM:PlayerDeathSound()
+	return true
 end
 
 function GM:PlayerNoClip(pl)

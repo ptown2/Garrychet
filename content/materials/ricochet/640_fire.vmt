@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "ricochet/640_fire"
+	"$translucent" 1
+}

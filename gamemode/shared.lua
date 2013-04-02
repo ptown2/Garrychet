@@ -18,13 +18,15 @@ end
 
 function GM:SetupGame()
 	SetGlobalInt("rc_round", 1)
+	SetGlobalInt("rc_timelimit", CurTime() + DEATHMATCH_TIMELIMIT)
 	SetGlobalBool("rc_roundend", false)
 end
 
 function GM:RestartGame()
-	game.CleanUpMap(false)
+	game.CleanUpMap()
 
 	SetGlobalInt("rc_round", GetGlobalInt("rc_round") + 1)
+	SetGlobalInt("rc_timelimit", CurTime() + DEATHMATCH_TIMELIMIT)
 	SetGlobalBool("rc_roundend", false)
 
 	for k, v in pairs(player.GetAll()) do 

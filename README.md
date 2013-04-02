@@ -1,7 +1,8 @@
 Garrychet
 =========
 
-A Ricochet gamemode on Garry's Mod 13
+A Ricochet gamemode clone on Garry's Mod 13. Experience the old Ricochet Gamemode in your hands!
+
 
 ### NOTE:
 This gamemode is still in under-development, any changes are very crucial and demanding.

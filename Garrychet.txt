@@ -1,0 +1,11 @@
+"Garrychet"
+{
+	"base"				"base"
+	"title"				"Garrychet"
+	"maps"				"^rc_"
+	"menusystem"		"1"
+
+	"author_name"		"Nightmare & ptown2"
+	"author_email"		"xptown2x@gmail.com"
+	"author_url"		""
+}
