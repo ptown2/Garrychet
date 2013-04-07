@@ -5,8 +5,10 @@ end)
 
 include("shared.lua")
 include("sh_colors.lua")
-include("cl_hud.lua")
+
 include("obj_player_extend.lua")
+
+include("cl_hud.lua")
 
 local ColorModDead = {
 	["$pp_colour_addr"] = 0,
@@ -21,7 +23,7 @@ local ColorModDead = {
 }
 
 function GM:CreateFonts()
-	--surface.CreateFont({})
+	surface.CreateFont("GRC_HUDFont", {font = "coolvetica", size = 32, 0, weight = false, antialias = false, shadow = true})
 end
 
 function GM:Initialize()
@@ -44,7 +46,7 @@ function GM:CalcView(pl, origin, angles, fov)
 end
 
 function GM:PlayerBindPress(pl, bind, on)
-	if (bind == "+jump" or bind == "+duck") then
+	if (bind == "+jump" or bind == "+duck" or bind == "+zoom") then
 		return true
 	end
 end

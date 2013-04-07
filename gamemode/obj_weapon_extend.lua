@@ -11,8 +11,6 @@ function meta:ResetFireSpeed()
 end
 
 function meta:CheckPowerup(powerup)
-	if not powerup then return end
-
 	local owner = self.Owner
 	local poweramt = owner:GetPowerupAmmo()
 	

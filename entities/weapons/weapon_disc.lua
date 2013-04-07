@@ -64,36 +64,33 @@ function SWEP:CanAttack()
 	return self:GetNextPrimaryFire() < CurTime()
 end
 
-function SWEP:CreateDisk(disk, ammo)
+function SWEP:CreateDisk(ammo, power)
 	local owner = self.Owner
-	local powerup = owner:GetPowerup()
 	local angles = owner:GetAngles()
 	local col = team.GetColor(owner:Team())
 
 	if SERVER then
-		if owner:GetPowerup() == POWERUP_FAST then
+		--[[if owner:GetPowerup() == POWERUP_FAST then
 			self:SetFireSpeed(0.3)
-		end
+		end]]
 	end
 
+	--self.LastFire = CurTime()
 	self:SetNextPrimaryFire(CurTime() + self.Primary.Delay)
+	self:TakePrimaryAmmo(ammo)
 	self:SendWeaponAnim(ACT_VM_PRIMARYATTACK)
 	owner:SetAnimation(PLAYER_ATTACK1)
-	self:TakePrimaryAmmo(ammo)
-	self.LastFire = CurTime()
 
 	if SERVER then
-		local disc = ents.Create(disk)
-		disc:SetPos(owner:GetPos() + owner:GetForward() * 24 + Vector(0, 0, 36))
+		local disc = ents.Create("projectile_disc")
+		disc:SetPos(owner:GetPos() + owner:GetForward() * 16 + Vector(0, 0, 36))
 		disc:SetOwner(owner)
-		disc:SetColor(powerup == POWERUP_FAST and COLOR_GREEN or Color(col.r, col.g, col.b, 255))
+		disc:SetColor(Color(col.r, col.g, col.b, 255))
 		disc:SetAngles(Angle(0, angles.yaw, 0))
 		disc:Spawn()
-		disc:SetPowerup(powerup)
 		disc:SetAmmoBack(ammo)
-		disc:Launch(powerup == POWERUP_FAST and 1500 or 1000)
-
-		self:CheckPowerup(powerup)
+		disc:Launch(1000)
+		disc:SetPowerShot(power)
 	end
 end
 
@@ -134,15 +131,14 @@ function SWEP:PrimaryAttack()
 	if self:Clip1() <= 0 then return end
 	if not self:CanAttack() then return end
 
-	local powerup = self.Owner:GetPowerup()
-	self:CreateDisk((powerup == POWERUP_POWERSHOT and "projectile_disc_power" or "projectile_disc"), 1)
+	self:CreateDisk(1, false)
 end
 
 function SWEP:SecondaryAttack()
 	if self:Clip1() < 3 then return end
 	if not self:CanAttack() then return end
 
-	self:CreateDisk("projectile_disc_power", 3)
+	self:CreateDisk(3, true)
 end
 
 function SWEP:Reload()
