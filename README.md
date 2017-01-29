@@ -24,14 +24,19 @@ Requesting texture value from var "$startexture" which is not a texture value (m
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedft)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedup)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
-Unsure how to fix this error```
 ```
+Unsure how to fix this error
+
 Upon shooting the disc this error will appear.
-`Bad pstudiohdr in GetSequenceLinearMotion()!`
+```lua
+Bad pstudiohdr in GetSequenceLinearMotion()!
+```
 Looking into fixing this error
 
 When the disc hits the end of the map this appears:
-`Changing collision rules within a callback is likely to cause crashes!`
+```lua
+Changing collision rules within a callback is likely to cause crashes!
+```
 Unsure how to fix, may be related to unfinished bounce code
 
 ALL BUGS ABOVE DON'T SEEM TO HINDER GAMEPLAY, CURRENTLY JUST CONSOLE ERRORS.
