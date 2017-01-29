@@ -28,6 +28,7 @@ Requesting texture value from var "$startexture" which is not a texture value (m
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
 ```
 Currently unsure how to fix that error error
+
 2==================================
 
 Upon shooting the disc this error will appear.
@@ -35,6 +36,7 @@ Upon shooting the disc this error will appear.
 Bad pstudiohdr in GetSequenceLinearMotion()!
 ```
 Looking into fixing this error
+
 3==================================
 
 When the disc hits the end of the map this appears:
