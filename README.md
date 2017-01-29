@@ -17,21 +17,20 @@ All other assests used belong to their creator no copyright infrignement intende
 
 ### CURRENT BUGS
 This error will happen upon loading this mod:
-Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)
+```Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)`
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedlf)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedbk)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedft)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedup)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
-Unsure how to fix this error
-
+Unsure how to fix this error```
+```
 Upon shooting the disc this error will appear.
-Bad pstudiohdr in GetSequenceLinearMotion()!
+`Bad pstudiohdr in GetSequenceLinearMotion()!`
 Looking into fixing this error
 
 When the disc hits the end of the map this appears:
-Changing collision rules within a callback is likely to cause crashes!
-Changing collision rules within a callback is likely to cause crashes!
+`Changing collision rules within a callback is likely to cause crashes!`
 Unsure how to fix, may be related to unfinished bounce code
 
 ALL BUGS ABOVE DON'T SEEM TO HINDER GAMEPLAY, CURRENTLY JUST CONSOLE ERRORS.
