@@ -37,7 +37,7 @@ When the disc hits the end of the map this appears:
 ```lua
 Changing collision rules within a callback is likely to cause crashes!
 ```
-Unsure how to fix, may be related to unfinished bounce code
+Unsure how to fix this one; It may be related to unfinished bounce code
 
 ALL BUGS ABOVE DON'T SEEM TO HINDER GAMEPLAY, CURRENTLY JUST CONSOLE ERRORS.
 
