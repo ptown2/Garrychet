@@ -17,7 +17,8 @@ All other assests used belong to their creator no copyright infrignement intende
 
 ### CURRENT BUGS
 This error will happen upon loading this mod:
-```Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)`
+```lua
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)`
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedlf)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedbk)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedft)
