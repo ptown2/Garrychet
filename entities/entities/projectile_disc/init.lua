@@ -7,7 +7,7 @@ ENT.MaxBounces = 1 -- Not done yet, don't even use this...
 ENT.DeathLimit = 15
 
 function ENT:Initialize()
-	self:SetModel("models/ricochet/ricochet_disc.mdl")
+	self:SetModel("models/props_junk/sawblade001a.mdl")
 	self:PhysicsInitSphere(6)
 	self:SetMoveType(MOVETYPE_VPHYSICS) --MOVETYPE_VPHYSICS
 
