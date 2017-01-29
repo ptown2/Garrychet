@@ -27,7 +27,7 @@ Requesting texture value from var "$startexture" which is not a texture value (m
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedup)
 Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
 ```
-Currently unsure how to fix that error error
+Currently unsure how to fix that error.
 
 2==================================
 
