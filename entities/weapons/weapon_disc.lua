@@ -13,7 +13,7 @@ SWEP.AutoSwitchFrom = false
 SWEP.HoldType = "slam"
 SWEP.ViewModel = ""
 
-SWEP.WorldModel = "models/ricochet/ricochet_disc.mdl"
+SWEP.WorldModel = "models/props_junk/sawblade001a.mdl"
 
 SWEP.Primary.ClipSize = 3
 SWEP.Primary.DefaultClip = 3
@@ -55,7 +55,7 @@ function SWEP:Deploy()
 	local owner = self.Owner
 
 	self:SendWeaponAnim(ACT_VM_DRAW)
-	self:SetModelScale(self:GetModelScale() / 2, 0)
+	self:SetModelScale( 0.5, 0)
 
 	return true
 end

@@ -50,6 +50,15 @@ function GM:AddResources()
 	resource.AddFile("materials/ricochet/640_fast.vtf")
 	resource.AddFile("materials/ricochet/640_fast.vmt")
 
+	resource.AddFile("materials/noxctf/sprite_bloodspray1.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray2.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray3.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray4.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray5.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray6.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray7.vmt")
+	resource.AddFile("materials/noxctf/sprite_bloodspray8.vmt")
+	
 	resource.AddFile("sound/ricochet/decap.wav")
 	resource.AddFile("sound/ricochet/disc_fire.wav")
 	resource.AddFile("sound/ricochet/disc_hit1.wav")
@@ -61,7 +70,7 @@ function GM:AddResources()
 	resource.AddFile("sound/ricochet/scream2.wav")
 	resource.AddFile("sound/ricochet/scream3.wav")
 	
-	resource.AddFile("models/ricochet/ricochet_disc.mdl")
+	resource.AddFile("models/props_junk/sawblade001a.mdl")
 end
 
 function GM:Initialize()
