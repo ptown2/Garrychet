@@ -3,11 +3,11 @@ AddCSLuaFile("shared.lua")
 
 include("shared.lua")
 
-ENT.MaxBounces = 1 -- Not done yet, don't even use this...
+ENT.MaxBounces = 1 -- Not done yet, don't even use this... (Need help for some of this)
 ENT.DeathLimit = 15
 
 function ENT:Initialize()
-	self:SetModel("models/props_junk/sawblade001a.mdl")
+	self:SetModel("models/disc.mdl")
 	self:PhysicsInitSphere(6)
 	self:SetMoveType(MOVETYPE_VPHYSICS) --MOVETYPE_VPHYSICS
 
@@ -65,9 +65,14 @@ function ENT:PhysicsCollide(data, physobj)
 	self.Direction = self:GetForward()
 	self.Bounces = self.Bounces + 1
 
-	--self.MaxBounces <= self.Bounces
-	if data.HitEntity:IsWorld() then
-		self:Remove()
+	--self.MaxBounces <= self.Bounces  --This line produeces an expected symobol near '<=' error :\
+	
+	if data.HitEntity:IsWorld() then --Is there away to remove this if it goes outside the map (Hits edge), versus ingame walls. It bounces off the edge of map
+		timer.Simple(0, function() --Remove the next frame..
+			if (IsValid(self)) then
+				self:Remove()
+			end
+		end)
 	end
 end
 
