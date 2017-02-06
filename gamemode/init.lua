@@ -70,7 +70,6 @@ function GM:AddResources()
 	resource.AddFile("sound/ricochet/scream2.wav")
 	resource.AddFile("sound/ricochet/scream3.wav")
 	
-	resource.AddFile("models/props_junk/sawblade001a.mdl")
 end
 
 function GM:Initialize()
