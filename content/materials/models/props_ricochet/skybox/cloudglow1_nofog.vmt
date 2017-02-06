@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models\props_ricochet\skybox\vortexcenter"
+	"$additive" "1"
+	"$translucent" "1"
+	"$nofog" 1
+}

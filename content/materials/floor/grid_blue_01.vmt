@@ -1,0 +1,5 @@
+"unlitgeneric" {
+	"$basetexture" "floor/grid_blue_01"
+	"$translucent" 1
+	"$surfaceprop" "glass"
+}

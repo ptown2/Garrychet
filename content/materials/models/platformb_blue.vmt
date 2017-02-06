@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/platformb_blue"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/platformb_normal"
+	"$envmap" "env_cubemap"
+//	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+
+}

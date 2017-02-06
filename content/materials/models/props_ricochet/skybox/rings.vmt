@@ -1,0 +1,21 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models\props_ricochet\skybox\rings"
+	"$nofog" 1
+	"$model" "1"
+	"$vertexalpha" 1
+	"$additive" 1
+	"$nocull" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+				"texturescrollvar" "$basetexturetransform"
+				"texturescrollrate" .008
+				"texturescrollangle" 0
+		}
+
+	}
+
+}

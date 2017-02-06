@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "models/exhaust"
+	"$nocull" "1"
+	"$mod2x" "1"
+	"$additive" "1"
+	"$translucent" "1"
+	"$model" "1"
+}

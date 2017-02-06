@@ -1,0 +1,31 @@
+//Created by Young for Ricochet:Source
+//Feel free to edit
+"Refract"
+{
+	"$model" 1
+//	"$fadeoutonsilhouette" 1
+	"$bluramount" 1
+	"$refractamount" ".75"
+	"$refracttint" "[.5 .5 .5]"
+	
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.4 .4 .4]"
+
+	"$dudvmap" "models/deflector2_dudv"
+	"$normalmap" "models/deflector2_normal"
+	
+	"$bumpframe" "0"
+
+	"$REFRACTTINTTEXTURE" "models/deflector2"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$refracttinttexture"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 30.00
+		}
+
+	}
+}

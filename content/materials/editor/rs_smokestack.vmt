@@ -1,0 +1,8 @@
+//Created by Young for Ricochet:Source FGD
+"Sprite"
+{
+	"$spriteorientation" "vp_parallel"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+	"$basetexture" "editor/rs_smokestack"
+	"$no_fullbright" 1
+}

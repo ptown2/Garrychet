@@ -1,0 +1,8 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/platform_dif"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/platformnorm_2"
+	"$envmap" "env_cubemap"
+
+}
