@@ -3,7 +3,44 @@ Garrychet
 
 A Ricochet gamemode clone on Garry's Mod 13. Experience the old Ricochet Gamemode in your hands!
 
-### Resurection Update:
+### Resurection Update v1.2: Visual Overhaul
+This update fixes most issues with the unfinished mod. This is a Fanmade fix sanctioned by ptwon2
+
+Added Beta Map's materials and models.
+Added custom powerup and disc model.
+Added background of new beta map.
+Added source files of all planned maps (Including current beta map)
+Fixed "Changing collision rules within a callback is likely to cause crashes!" error (Thanks facepunch!)
+
+### Need Help from any Exprenced Mappers and/or GmodLua Programmers to Provide More Patches and Maps!!
+
+### CURRENT BUGS
+1 =================================
+
+This error will happen upon loading this mod:
+```lua
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)`
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedlf)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedbk)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedft)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedup)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
+```
+Currently unsure how to fix that error. (Not going to fix as it doesn't affect gameplay)
+
+2==================================
+
+Upon shooting the disc this error will appear.
+```lua
+Bad pstudiohdr in GetSequenceLinearMotion()!
+```
+STILL Looking into fixing this error. Occures when firing disc (And maybe dying?)
+
+==================================================================
+
+ALL BUGS ABOVE DON'T SEEM TO HINDER GAMEPLAY, CURRENTLY JUST CONSOLE ERRORS.
+
+### Resurection Update: (Kept here to see changes overtime)
 This update fixes most issues with the unfinished mod. This was a fan made fix and not officaly endourced by ptown2 or Nightmare
 
 Replaced the model to the sawblade (This github didn't contain the model file for ricochet)
