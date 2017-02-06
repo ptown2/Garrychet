@@ -4,7 +4,7 @@ AddCSLuaFile("shared.lua")
 include("shared.lua")
 
 function ENT:Initialize()
-	self:SetModel("models/props_junk/sawblade001a.mdl") 
+	self:SetModel("models/powerup.mdl") 
 	self:PhysicsInit(SOLID_VPHYSICS)
 	self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
 	self:SetMoveType(MOVETYPE_NONE)
