@@ -1,0 +1,9 @@
+"Sprite"
+{
+	"$spriteorientation" "vp_parallel"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+	"$baseTexture" "Sprites/moon1"
+	"$decal" 1
+	"$decalscale" 0.25
+	"$translucent" 1
+}
