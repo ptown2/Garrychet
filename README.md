@@ -7,7 +7,8 @@ A Ricochet gamemode clone on Garry's Mod 13. Experience the old Ricochet Gamemod
 This update fixes most issues with the unfinished mod. This is a Fanmade fix sanctioned by ptwon2
 
 Update fixes the beta map to remove 'projectile_disc' upon hitting the skybox (End of map)
-Update fixes most of the bounce code. (Bounces correct number of times, thanks Germanchocolate!)
+Update fixes most of the bounce code.
+(Bounces correct number of times, thanks Germanchocolate!)
 Update adds all resources under the 'GM:AddResources()' function
 
 ###STILL Need Help from any Exprenced Mappers and/or GmodLua Programmers to Provide More Patches and Maps!!
