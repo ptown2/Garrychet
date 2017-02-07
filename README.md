@@ -3,7 +3,48 @@ Garrychet
 
 A Ricochet gamemode clone on Garry's Mod 13. Experience the old Ricochet Gamemode in your hands!
 
-### Resurection Update v1.2: Visual Overhaul
+### Resurection Update v1.3: Patches, Patches, and More Patches
+This update fixes the beta map to remove 'projectile_disc' upon hitting the skybox (End of map)
+This update fixes most of the bounce code. 
+It now bounces only three times and then removes itself on the fourth bounce (Thanks Germanchocolate!)
+This update adds all resources under the 'GM:AddResources()' function
+
+###STILL Need Help from any Exprenced Mappers and/or GmodLua Programmers to Provide More Patches and Maps!!
+
+### TODO
+Fix all current bugs if possible
+Add working powerups
+
+### CURRENT BUGS (AFFECTS GAMEPLAY)
+Projectile_disc looses velocity upon bouncing, I need help to fix this issue.
+
+### CURRENT BUGS (DOESN'T IMPACT GAMEPLAY)
+1 =================================
+
+This error will happen upon loading this mod:
+```lua
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedrt)`
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedlf)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedbk)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedft)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/paintedup)
+Requesting texture value from var "$startexture" which is not a texture value (material: skybox/painteddn)
+```
+Currently unsure how to fix that error. (Not going to fix as it doesn't affect gameplay)
+
+2==================================
+
+Upon shooting the disc this error will appear.
+```lua
+Bad pstudiohdr in GetSequenceLinearMotion()!
+```
+STILL Looking into fixing this error. Occures when firing disc (And maybe dying?)
+
+==================================================================
+
+ALL BUGS ABOVE DON'T SEEM TO HINDER GAMEPLAY, CURRENTLY JUST CONSOLE ERRORS.
+
+### Resurection Update v1.2: Visual Overhaul (Kept here to see changes overtime)
 This update fixes most issues with the unfinished mod. This is a Fanmade fix sanctioned by ptwon2
 
 Added Beta Map's materials and models.
