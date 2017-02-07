@@ -4,10 +4,11 @@ Garrychet
 A Ricochet gamemode clone on Garry's Mod 13. Experience the old Ricochet Gamemode in your hands!
 
 ### Resurection Update v1.3: Patches, Patches, and More Patches
-This update fixes the beta map to remove 'projectile_disc' upon hitting the skybox (End of map)
-This update fixes most of the bounce code. 
-It now bounces only three times and then removes itself on the fourth bounce (Thanks Germanchocolate!)
-This update adds all resources under the 'GM:AddResources()' function
+This update fixes most issues with the unfinished mod. This is a Fanmade fix sanctioned by ptwon2
+
+Update fixes the beta map to remove 'projectile_disc' upon hitting the skybox (End of map)
+Update fixes most of the bounce code. (Bounces correct number of times, thanks Germanchocolate!)
+Update adds all resources under the 'GM:AddResources()' function
 
 ###STILL Need Help from any Exprenced Mappers and/or GmodLua Programmers to Provide More Patches and Maps!!
 
