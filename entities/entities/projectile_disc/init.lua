@@ -3,7 +3,7 @@ AddCSLuaFile("shared.lua")
 
 include("shared.lua")
 
-ENT.MaxBounces = 1 -- Not done yet, don't even use this... (Need help for some of this)
+ENT.MaxBounces = 3 -- Works fine on latest beta map (Except loss in velocity)
 ENT.DeathLimit = 15
 
 function ENT:Initialize()
@@ -64,10 +64,7 @@ function ENT:PhysicsCollide(data, physobj)
 	self:EmitSound("ricochet/disc_hit"..math.random(1,2)..".wav", 78, 80)
 	self.Direction = self:GetForward()
 	self.Bounces = self.Bounces + 1
-
-	--self.MaxBounces <= self.Bounces  --This line produeces an expected symobol near '<=' error :\
-	
-	if data.HitEntity:IsWorld() then --Is there away to remove this if it goes outside the map (Hits edge), versus ingame walls. It bounces off the edge of map
+		if self.MaxBounces <= self.Bounces then --Is there away to remove this if it goes outside the map (Hits edge), versus ingame walls. It bounces off the edge of map
 		timer.Simple(0, function() --Remove the next frame..
 			if (IsValid(self)) then
 				self:Remove()
