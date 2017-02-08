@@ -1,0 +1,11 @@
+"Refract"
+{
+ 	"$model" 1
+	"$translucent" 1
+	"$bluramount" "0"
+ 	"$refractamount" "1"
+	"$REFRACTTINT" "{255 153 51}"
+	"$scale" "[1 1]"
+ 	"$dudvmap" "shadowkiller/smokegrenade_normal"
+	"$normalmap" "shadowkiller/smokegrenade_normal"
+}

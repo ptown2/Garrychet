@@ -1,0 +1,5 @@
+"sky"
+{
+	"$nofog" "1"
+	"$basetexture" "skybox/sky_rico_space_02BK"
+}

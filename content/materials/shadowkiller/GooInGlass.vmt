@@ -1,0 +1,9 @@
+"LightmappedGeneric" 
+{
+	"$baseTexture" "shadowkiller/gooinglass"
+	"$translucent" 1
+	"$bumpmap" "shadowkiller"gooinglass_normal"
+	"$surfaceprop" "glass"
+
+} 
+

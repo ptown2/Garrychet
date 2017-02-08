@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/pipes"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/pipes_normal"
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+
+}

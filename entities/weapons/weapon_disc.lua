@@ -13,7 +13,11 @@ SWEP.AutoSwitchFrom = false
 SWEP.HoldType = "slam"
 SWEP.ViewModel = ""
 
+<<<<<<< HEAD
+SWEP.WorldModel = "models/disc.mdl"
+=======
 SWEP.WorldModel = "models/props_junk/sawblade001a.mdl"
+>>>>>>> refs/remotes/origin/master
 
 SWEP.Primary.ClipSize = 3
 SWEP.Primary.DefaultClip = 3

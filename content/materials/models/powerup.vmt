@@ -1,0 +1,11 @@
+//Created by Young for Ricochet:Source
+//Feel free to edit
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/powerup"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/powerup_normal"
+	"$envmap" "env_cubemap"
+	"$Selfillum" "1"
+	"$envmapsaturation" 1
+}

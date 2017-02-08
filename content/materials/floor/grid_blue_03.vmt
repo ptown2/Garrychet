@@ -1,0 +1,6 @@
+"unlitgeneric" {
+    "$basetexture" "floor/grid_blue_03"
+    "$translucent" 1
+    "$surfaceprop" "glass"
+    "%compilepassbullets" 1
+}
