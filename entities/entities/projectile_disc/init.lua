@@ -7,11 +7,7 @@ ENT.MaxBounces = 3 -- Works fine on latest beta map (Except loss in velocity)
 ENT.DeathLimit = 15
 
 function ENT:Initialize()
-<<<<<<< HEAD
 	self:SetModel("models/disc.mdl")
-=======
-	self:SetModel("models/props_junk/sawblade001a.mdl")
->>>>>>> refs/remotes/origin/master
 	self:PhysicsInitSphere(6)
 	self:SetMoveType(MOVETYPE_VPHYSICS) --MOVETYPE_VPHYSICS
 
