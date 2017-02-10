@@ -56,15 +56,15 @@ function ENT:Think()
 end
 
 function ENT:PhysicsCollide(data, physobj)
-	local vphys = physobj:GetVelocity() * data.OurOldVelocity:Length()
-	local angles = self:GetAngles()
+	local vphys = physobj:GetVelocity():GetNormalized()
+    local angles = self:GetAngles()
 
-	physobj:SetVelocityInstantaneous(Vector(vphys.x / 1000, vphys.y / 1000, 0))
+    physobj:SetVelocityInstantaneous(Vector(vphys.x, vphys.y,0) * 1000)
 
 	self:EmitSound("ricochet/disc_hit"..math.random(1,2)..".wav", 78, 80)
 	self.Direction = self:GetForward()
 	self.Bounces = self.Bounces + 1
-		if self.MaxBounces <= self.Bounces then --Is there away to remove this if it goes outside the map (Hits edge), versus ingame walls. It bounces off the edge of map
+		if self.MaxBounces < self.Bounces then --Is there away to remove this if it goes outside the map (Hits edge), versus ingame walls. It bounces off the edge of map
 		timer.Simple(0, function() --Remove the next frame..
 			if (IsValid(self)) then
 				self:Remove()
