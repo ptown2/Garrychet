@@ -56,7 +56,7 @@ function ENT:Think()
 end
 
 function ENT:PhysicsCollide(data, physobj)
-	local vphys = physobj:GetVelocity():GetNormalized()
+    local vphys = physobj:GetVelocity():GetNormalized()
     local angles = self:GetAngles()
 
     physobj:SetVelocityInstantaneous(Vector(vphys.x, vphys.y,0) * 1000)
